@@ -1,0 +1,46 @@
+body {
+  background-color: #efefef;
+}
+.leadtext {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.shine {
+  background: linear-gradient(to right, #fc9acd, #5918fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+  max-width: 400px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

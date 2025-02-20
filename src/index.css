@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "head";
+  src: url(/public/assets/head.woff2);
+}
+@font-face {
+  font-family: "title";
+  src: url(/public/assets/title.woff2);
+}
+@font-face {
+  font-family: "body";
+  src: url(/public/assets/body.woff2);
+}
+@font-face {
+  font-family: "mson";
+  src: url(/public/assets/mson.woff2);
+}
+@font-face {
+  font-family: "gotesk";
+  src: url(/public/6513d251b723375d53aaa9da_SharpGrotesk-Bold15.otf);
+}
+@font-face {
+  font-family: neu;
+  src: url(/public/NeueMontreal-Regular-47e73008.otf);
+}
+html,
+body,
+* {
+  cursor: none;
+}
