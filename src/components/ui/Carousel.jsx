@@ -7,6 +7,7 @@ import "swiper/css/navigation"; // Import navigation styles
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import { ThreeDCardDemo } from "../Card";
 import { ChevronLeft, ChevronRight } from "lucide-react"; // Import icons for buttons
+import imageGallery from "../../libs/projects";
 
 const Carousel = () => {
   const swiperRef = useRef(null);
@@ -72,9 +73,9 @@ const Carousel = () => {
         className="mySwiper"
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
-        {images.map((img, index) => (
+        {imageGallery.map((img, index) => (
           <SwiperSlide key={index}>
-            <ThreeDCardDemo img={img} alt={`Slide ${index}`} />
+            <ThreeDCardDemo data={img} alt={`Slide ${index}`} />
           </SwiperSlide>
         ))}
       </Swiper>

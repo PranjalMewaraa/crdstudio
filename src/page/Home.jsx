@@ -393,7 +393,7 @@ const Home = () => {
       </section>
       {/*SERVICES*/}
       <section className="w-full min-h-screen mb-96 px-2 md:px-8 items-center hidden md:flex flex-col">
-        <div className="flex mb-20 w-full star items-center justify-between">
+        <div className="flex mb-20 w-full starmob items-center justify-between">
           <div className="font-[title]  pl-10 leading-none text-[10vw] ">
             <div className="flex ">
               {"WHAT ".split("").map((item) => {
