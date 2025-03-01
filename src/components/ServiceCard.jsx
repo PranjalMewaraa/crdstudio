@@ -5,7 +5,7 @@ const ServiceCard = ({ data }) => {
   return (
     <article
       id={`card`}
-      className={`card w-full md:w-[95%] mb-24 bg-white h-fit rounded-[60px] p-8 relative md:p-16 flex gap-8 card${data.idx}`}
+      className={`card w-full md:w-[95%] mb-24 bg-white h-full rounded-[60px] p-8 relative md:p-16 flex gap-8 card${data.idx}`}
     >
       <div className="w-full md:w-1/2 h-full flex flex-col z-50  justify-evenly gap-8">
         <p className="text-3xl md:text-[6rem] stroke-black stroke-2 leading-none font-[body]">
@@ -19,11 +19,12 @@ const ServiceCard = ({ data }) => {
         <p className="text-2xl font-[title]">{data.desc}</p>
         <Button btnText={data.btnText} />
       </div>
-      <div className="w-20 hidden md:flex md:w-1/2 max-h-[30rem] h-fit rounded-tr-[150px] overflow-hidden">
+      <div className="w-20 hidden md:flex md:w-1/2   max-h-[30rem] bg-cover relative bg-right bg-no-repeat   rounded-tr-[120px] overflow-hidden">
         <video
           src="https://kota-content.b-cdn.net/app/uploads/2024/02/homepage.mp4"
           autoPlay
           muted
+          className="w-full h-full  object-cover z-50"
         ></video>
       </div>
     </article>

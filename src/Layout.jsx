@@ -42,7 +42,7 @@ const Layout = () => {
         ref={containerRef}
         data-scroll-container
         id="layout"
-        className="max-w-screen-2xl w-full flex flex-col relative h-full z-10 bg-cover bg-no-repeat"
+        className=" w-full flex flex-col relative h-full z-10 bg-cover bg-no-repeat"
       >
         <div
           className="w-full h-screen bg-cover bg-no-repeat z-0 fixed"

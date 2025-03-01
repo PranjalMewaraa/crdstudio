@@ -1,5 +1,6 @@
 body {
   background-color: #efefef;
+  scrollbar-width: 0px;
 }
 .leadtext {
   width: fit-content;
@@ -24,6 +25,10 @@ body {
   100% {
     background-position: 100% 50%;
   }
+}
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  display: none;
 }
 
 .swiper {

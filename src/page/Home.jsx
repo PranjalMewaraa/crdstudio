@@ -220,6 +220,15 @@ const Home = () => {
       },
       scale: 1.5,
     });
+    gsap.from("#xtitle23", {
+      scrollTrigger: {
+        trigger: "#xtitle23",
+        start: "top bottom",
+        end: "top center",
+        scrub: true,
+      },
+      scale: 1.5,
+    });
     gsap.from("#xtitle3", {
       scrollTrigger: {
         trigger: "#xtitle3",
@@ -659,6 +668,7 @@ const Home = () => {
           </div>
         </section>
         <section id="black2" className=" w-full h-fit bg-black py-8">
+          <CompareDemo />
           <div
             id="xtitle2"
             className="font-[gotesk]  uppercase text-white w-full text-center leading-none text-5xl md:text-[7vw]"
